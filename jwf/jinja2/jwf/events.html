@@ -1,0 +1,14 @@
+{% extends 'jwf/base.html' %}
+
+{% block content %}
+<h1>Events</h1>
+<!-- <h2>Upcoming Events</h2> -->
+<!-- <h2>Past Events</h2> -->
+{% for event in events %}
+<paper-card heading="{{event['name']}}">
+  <div class="card-content">
+    {{event['description']}}
+  </div>
+</paper-card>
+{% endfor %}
+{% endblock %}

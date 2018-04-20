@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ title }}</title>
+    {% block imports %}
+    <link rel="import" href="{{static('app-layout/app-layout.html')}}">
+    <link rel="import" href="{{static('paper-card/paper-card.html')}}">
+    {% endblock %}
+    {% block style %}
+    <link rel="import" href="{{static('styles/jwf.html')}}">
+    {% endblock %}
+    {% block extrahead %}{% endblock %}
+  </head>
+  <body>
+  {% block body %}
+    <app-header-layout fullbleed>
+      {% block header %}
+      <app-header slot="header" fixed>
+        <app-toolbar>
+          <div main-title><a href="{{url('index')}}">{{title}}</a></div>
+          {% for nav in navs %}
+            <a href="{{url(nav['view'])}}">{{nav['title'].title()}}</a>
+          {% endfor %}
+        </app-toolbar>
+        {% block extraheader %}{% endblock %}
+      </app-header>
+      {% endblock %}
+      <div class="content">
+      {% block content %}{% endblock %}
+      </div>
+    </app-header-layout>
+  {% endblock %}
+  </body>
+</html>

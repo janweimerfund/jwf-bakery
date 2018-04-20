@@ -1,0 +1,88 @@
+{% extends 'jwf/base.html' %}
+
+{% block content %}
+<paper-card heading="In Memory of Jan Weimer">
+  <div class="card-content">
+<p>On Friday, April 13, 2007 , we lost one of the nation’s most notable and talented food minds. Jan Weimer was an encyclopedic master of all aspects of food: its preparation, sourcing, marketing language and equipment. Widely traveled, she was the free lance author of hundreds of articles, in dozens of publications, some introducing groundbreaking innovations in American Cuisine. Her book on kitchen design is the most comprehensive guide on design principles, sourcing and legal aspects on the shelf. Jan was an Einstein of recipe development. As a genius does, she cooked in her head and could read a recipe like a conductor sight reads sheet music. She won numerous awards for her intellectual achievement, including best paper at the 1999 Appliance Manufacturer Conference and Expo, a rare achievement for a woman and non-engineer. Her career spanned a comprehensive tour of the food world as Executive Food Editor of Bon Appetit Magazine, Assistant Food editor of the San Francisco Chronicle, Chief Culinary Officer of Chefstore.com and consultant to Princess Cruises, Covent Garden Soup Company, Trefethen Winery, numerous restaurants, and many happy home chefs in their new kitchens.</p>
+<p>Jan was a graduate of the Paris Cordon Bleu and had, as well, a masters degree from Stanford University in Speech and Audiology. She was a powerful influence on many in the food world and in her chosen avocation, serving selflessly as arts volunteer supporting LACMA. With an unmatchable work ethic and incomparable humility, she served as a role model for many women professionals in diverse fields.</p>
+<p>She will be sorely missed by her family and friends. Jan leaves, Sandy, her husband and soulmate of 42 years, her mother, Cyrille, and her brother Sam.</p>
+</div>
+</paper-card>
+<paper-card heading="About">
+<div class="card-content">
+  <p>Jan Weimer died on April 13, 2007 after a mostly confidential fifteen year
+    battle with breast cancer. She left behind a legacy of creativity, devotion
+    and selfless friendship. She mentored many women in their careers and supported
+    many causes. As she saw her own end coming, she had a vision to help women
+    who are suffering from cancer as she did. We had many conversations about
+    our shared estate and vision. Jan wanted to &ldquo;beat the littlef---ers&rdquo; that
+    were invading her body. She felt blessed that she could continue her career
+    despite side effects of chemotherapy and afford a natural hair wig that kept
+    her secret almost to the end.</p>
+  <p>To keep faith with her vision, I have led a group of her friends in organizing
+    a fund raising effort to endow a chair in breast oncology at Stanford Medical
+    School, where we both graduated. Our friend and my medical school classmate,
+    Ron Levy, a major researcher in the field of cancer biology and head of Stanford
+    Oncology, is the perfect steward for the funds raised. Stanford has committed
+    to honor Jan&rsquo;s wishes and fulfill her vision and I have committed our
+    estate to the project.</p>
+  <p>Please join me in contributing funds to the Jan Weimer Memorial Fund to
+    endow a research program to support the professorial chair established in her name. </p>
+  <p>Please dig deep into the pocket book and send donations to:</p>
+  <blockquote>Jan Weimer Fund<br>
+  c/o Dr. Sanford Weimer<br>
+  517. E. Wilson, Ste. 105,<br>
+  Glendale, CA 91206</blockquote>
+</div>
+</paper-card>
+<paper-card heading="Stanford">
+  <div class="card-content">
+  <p><u><strong>Allison W. Kurian</strong></u>, M.D., M.Sc. is
+    an Assistant Professor of Medicine and of Health Research and Policy at Stanford
+    University School of Medicine. She received her medical degree from Harvard
+    Medical School, did her residency in Internal Medicine at the Massachusetts
+    General Hospital, and completed her fellowship training in Medical Oncology
+    along with a master&rsquo;s degree in Epidemiology at Stanford University.
+    As Associate Director of the Stanford Program for Clinical Cancer Genetics,
+    her clinical practice centers on women at high risk for developing breast
+    and ovarian cancer. Her research focuses on identification of women with
+    elevated breast and ovarian cancer risk, and on development and evaluation
+    of novel techniques for early cancer detection and risk reduction; this research
+    is supported by grant funding from the National Institutes of Health, Susan
+    G. Komen Breast Cancer Foundation, American Society of Clinical Oncology,
+    California Breast Cancer Research Program, and Robert Wood Johnson Foundation.</p>
+    <h2>Work</h2>
+<paper-item>
+  <paper-item-body>
+    <div>CV</div>
+  </paper-item-body>
+</paper-item>
+{% for article in articles %}
+<paper-item>
+  <paper-item-body twoline>
+    <div>{{article['title']}}</div>
+    <div secondary>{{article['cite']}}</div>
+  </paper-item-body>
+</paper-item>
+{% endfor %}
+</div>
+</paper-card>
+<paper-card heading="Tax ID">
+  <div class="card-content">
+    <paper-item>
+      <paper-item-body>
+        <div>912144095</div>
+        <div secondary>Jan Weimer Fund Tax ID</div>
+      </paper-item-body>
+    </paper-item>
+    <p>We prefer people use this number and send checks (made out to Stanford University, with Jan Weimer Fund in the memo section) to our address in Glendale, so we can properly record, track and systematically forward the funds to Stanford.</p>
+    <paper-item>
+      <paper-item-body>
+        <div>941156365</div>
+        <div secondary>Stanford University</div>
+      </paper-item-body>
+    </paper-item>
+    <p>The 941156365 is the Stanford tax ID number, which is to be used by those with charitable trusts or foundations that can only contribute to public charities. We would like to emphasize that if at all possible those with these charitable foundations make their checks payable directly to Stanford Univeristy, put Jan Weimer Fund in the memo section, but mail them to our Glendale office so we can, again, properly record, track and forward the funds to Stanford. If they have to be mailed directly to Stanford, we would like to emphasize to people to please notify us of their contribution so we can track it and assure its proper accounting in the Stanford system.</p>
+  </div>
+</paper-card>
+{% endblock %}
