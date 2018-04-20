@@ -1,5 +1,0 @@
-#! /bin/sh
-
-$HOME/jwf/manage.py collectstatic
-$HOME/jwf/manage.py build
-cp -rf $HOME/jwf/bakery/* $HOME/janweimerfund.github.io

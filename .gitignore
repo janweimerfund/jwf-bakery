@@ -1,1 +1,3 @@
 .env
+static/
+*.sqlite3
